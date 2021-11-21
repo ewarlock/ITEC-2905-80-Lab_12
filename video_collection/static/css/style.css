@@ -1,0 +1,26 @@
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.video {
+    background-color: #161f27;
+    border: 2px solid #161f27;
+    border-radius: 15px;
+    width: 820px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.video ul, li {
+    text-align: left;
+}
+.navigation {
+    margin: 10px;
+    text-align: center;
+}
+.navigation > a {
+    color: greenyellow;
+    padding: 30px 0px 0px 30px;
+}
+.navigation > a:hover {
+    color: lightgreen;
+}

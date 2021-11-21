@@ -1,0 +1,30 @@
+{% extends 'video_collection/base.html' %}
+
+{% block content %}
+
+<div class="title">
+    <h2>Video Details</h2>
+</div>
+
+
+    <div class="video">
+        <h3>{{ video.name }}</h3>
+
+        <iframe width="800" height="450" src="https://youtube.com/embed/{{video.video_id}}"></iframe>
+        <br>
+        <hr>
+        <ul>
+            <li>ID: {{ video.pk }}</li>
+            <li>Name: {{ video.name }}</li>
+            <li>URL: {{ video.url }}</li>
+            <li>Video ID: {{ video.video_id }}</li>
+        </ul>
+        {% if video.notes %}
+            <p>Notes: {{ video.notes }}</p>
+        {% else %}
+            <p>No notes for this video.</p>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

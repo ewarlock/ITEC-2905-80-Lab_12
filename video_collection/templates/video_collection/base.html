@@ -1,0 +1,29 @@
+{% load static %}
+<!-- loading static files like css -->
+
+<html>
+    <head>
+        <title>Video Collection</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+<body>
+    <div class="navigation">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+        <a class="nav-link" href="{% url 'video_list' %}">View Videos</a>
+        <a class="nav-link" href="{% url 'add_video' %}">Add a Video</a>            
+    </div>
+    <hr>
+
+        {% block content %}
+        {% endblock %}
+
+    <hr>
+    <div class="navigation">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+        <a class="nav-link" href="{% url 'video_list' %}">View Videos</a>
+        <a class="nav-link" href="{% url 'add_video' %}">Add a Video</a>            
+    </div>
+</body>
+</html>
